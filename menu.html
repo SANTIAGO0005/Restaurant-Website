@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Restaurant</title>
+
+	<!-- Normalize V8.0.1 -->
+	<link rel="stylesheet" href="./css/normalize.css">
+
+	<!-- MDBootstrap V5 -->
+	<link rel="stylesheet" href="./css/mdb.min.css">
+
+	<!-- Font Awesome V5.15.1 -->
+	<link rel="stylesheet" href="./css/all.css">
+
+	<script src="js/menu.js"></script>
+
+	<!-- General Styles -->
+	<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilo de navegacion.css">
+</head>
+<body>
+
+	<!-- Header -->
+	<header class="menu">
+        <div class="container3">
+			<a href="index.html"> <h1 class="logo">EL GRAN PALACIO </h1></a>
+        </div>
+        <nav id="site-nav" class="site-nav">
+            <ul>
+                <li><a href="menu.html"><i class="fas fa-utensils site-nav--icon"></i>menus</a></li>
+                <li><a href="galeria.html"><i class="fas fa-images site-nav--icon"></i>galeria</a></li>
+                <li><a href="ubicaciones.html"><i class="fas fa-map-marker-alt site-nav--icon"></i>ubicaciones</a></li>
+                <li><a href="quienes somos.html"><i class="fas fa-users site-nav--icon"></i>quienes somos</a></li>
+				<li><a href="nuestra historia.html"><i class="fas fa-users site-nav--icon"></i>nuestra historia</a></li>
+                <li><a href="login.html"><i class="fas fa-user site-nav--icon"></i>login</a></li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" class="menu-toggle" onClick="cambiarClase()">
+            <div class="hamburger"></div>
+        </div>
+    </header>
+	
+    
+
+
+	<!-- Content -->
+	<div class="container container-web-page">
+	    <h3 class="font-weight-bold poppins-regular text-uppercase">Menú de platillos</h3>
+	    <p class="text-justify">Bienvenido al menú de platillos, acá encontrara todos los platillos disponibles en el restaurante. Puede ordenar los platillos por categoría en el botón "<i class="fas fa-hamburger fa-fw"></i> MENÚ" </p>
+
+	    <div class="container-fluid" >
+	        <div class="row align-items-center">
+	            <div class="col-12 col-sm-4 text-center text-sm-start">
+	                <div class="dropdown">
+	                    <button class="btn btn-link dropdown-toggle" type="button" id="categorySubMenu">
+	                        <i class="fas fa-hamburger fa-fw"></i> &nbsp; Menú
+	                    </button>
+	                  
+	                </div>
+	            </div>
+	            <div class="col-12 col-sm-4 text-center"> </div>
+	            <div class="col-12 col-sm-4 text-center text-sm-end">
+	                <div class="dropdown">
+	                    
+	                    
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+
+	    <div class="container-fluid" style="padding: 20px 0;">
+	        <div class="row">
+	            <div class="col-12 col-md-8">
+	                <p class="text-left lead"> &nbsp; <span class="font-weight-bold poppins-regular text-uppercase">nuestro gran menu&nbsp;</span></p>
+	            </div>
+	            
+	    </div>
+
+
+	    <div class="container-cards full-box" style="padding-bottom: 40px;">
+
+          <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="assets/platillos/Camarones rancheros.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">Camarones rancheros&nbsp;</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	            </div>
+			  
+	            <div class="card-body text-center">
+                  <p  class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i>&nbsp; &nbsp;detalles del platillo</a> </p>
+                  <p>&nbsp;Puede que el nombre de este platillo&nbsp; no sea el más elegante ni el más romántico, pero nada nos impide preparar una receta con sabor muy mexicano para nuestra comida o cena de San Valentín.</p>
+	                
+              </div>
+	        </div>
+
+	      <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="assets/platillos/cerdo en salsa chipotle.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">Lomo cerdo en salsa chipotle&nbsp;</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                
+                  <p  class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i>&nbsp; &nbsp;detalles del platillo</a> </p>
+                  <p>este platillo de Lomo de Cerdo con Salsa Cremosa de Chipotle. Es un platillo muy rico, ideal para cualquier día de la semana y servir después de una sopa. El chile chipotle tiene un toque acidito que le da a la carne un rico sabor.&nbsp;</p>
+	                
+              </div>
+	        </div>
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="assets/platillos/ensalada de pollo con mayonesa.jpg" alt="nombre_platillo">
+              <div class="card-body text-center">
+                <h5 class="card-title font-weight-bold">&nbsp;pollo a la mayonesa</h5>
+                  <p class="card-text lead"><span class="badge bg-secondary">$25.000 CP</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                
+                  <p class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i>&nbsp; &nbsp;detalles del platillo</a> </p>
+                  <p>&nbsp;Este pollo con mayonesa es ideal para momentos en familia y nutritivo, pues también emplearemos vegetales para la salsa.</p>
+	                
+              </div>
+	        </div>
+	       <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="assets/platillos/Ensalada Rusa con Pollo.jpg" alt="nombre_platillo">
+             <div class="card-body text-center">
+               <h5 class="card-title font-weight-bold">Ensalada Rusa con Pollo&nbsp;</h5>
+                 <p class="card-text lead"><span class="badge bg-secondary">$25.000 CP</span></p>
+               </div>
+	            <div class="card-body text-center">
+                  <p  class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i>&nbsp; &nbsp;detalles del platillo</a> </p>
+                  <p>&nbsp;Esta Ensalada Rusa con Pollo le da un giro a la tradicional, agregando pechuga de pollo deshebrado y mostaza.</p>
+	                
+              </div>
+	        </div>
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="assets/platillos/salmon a la naranja.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">salmon a la naranja&nbsp;</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                
+                  <p  class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i>&nbsp; &nbsp;detalles del platillo</a> </p>
+                  <p>Lo más importante de este platillo de salmón, lo barnices con el glaseado durante la cocción, ya que sólo así quedará doradito y crujiente.&nbsp;</p>
+	                
+              </div>
+	        </div>
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="assets/platillos/spaghetti a la boloñesa.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">spaghetti a la boloñesa&nbsp;</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                
+                  <p  class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i>&nbsp; &nbsp;detalles del platillo</a> </p>
+                  <p>No puede faltar este clásico de la gastronomía en tu día a día.  La salsa queda espectacular por la frescura de los ingredientes.&nbsp;</p>
+	                
+              </div>
+	        </div>
+	  <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="assets/platillos/paella valenciana.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">&nbsp;Paella Valenciana</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                
+                  <p  class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i>&nbsp; &nbsp;detalles del platillo</a> </p>
+                  <p>&nbsp; esta deliciosa paella&nbsp; te quedarás impresionado del buen sabor que tiene esta paella,  puede estarde platillo principla</p>
+	                
+              </div>
+	        </div>
+
+	      <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="assets/platillos/Pescado a la hawaiana.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">Pescado a la Hawaiana&nbsp;</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                
+                  <p  class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i>&nbsp; &nbsp;detalles del platillo</a> </p>
+                  <p>saludable es el pescado a la hawaiana, Tienen un toque dulce muy atractivo, gracias a la piña en trozos que le aporta sabor. copa de vino blanco o si es nuestro gusto</p>
+	                
+              </div>
+	        </div>
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="assets/platillos/Salsa Boloñesa original.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">Salsa Boloñesa original&nbsp;</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                
+                  <p  class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i>&nbsp; &nbsp;detalles del platillo</a> </p>
+                  <p>&nbsp;La salsa boloñesa es un clásico de la comida italian&nbsp; &nbsp; este platillo además de ser delicioso tiene muchas cualidades nutricionales y se puede degustar de múltiples maneras</p>
+	                
+              </div>
+	        </div>
+	       <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="assets/platillos/Tarta de espinacas y mozzarella.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">Tarta de espinacas y mozzarella&nbsp;</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                
+                  <p  class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i>&nbsp; &nbsp;detalles del platillo</a> </p>
+                  <p>&nbsp;Una deliciosa tarta de espinacas y mozzarella que  con masa hojaldre, y  junto con un vino blanco seco bien frío y una salsa picante.</p>
+	                
+              </div>
+	        </div>
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="assets/platillos/Sopa de Calabaza y Jengibre con Semillas de Girasol.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">Sopa de Calabaza y Jengibre con Semillas de Girasol&nbsp;</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                
+                  <p  class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i>&nbsp; &nbsp;detalles del platillo</a> </p>
+                  <p>&nbsp;Disfruta este platillo de Sopa de Calabaza y Jengibre con Semillas de Girasol, es perfecta para fortalecer tu sistema respiratorio, además es perfecta para las personas que son intolerantes a la lactosa</p>
+	                
+              </div>
+	        </div>
+
+	        <div class="card shadow-1-strong">
+	            <img class="card-img-top" src="assets/platillos/platillo.jpg" alt="nombre_platillo">
+	            <div class="card-body text-center">
+	                <h5 class="card-title font-weight-bold">Nombre o titulo del platillo</h5>
+	                <p class="card-text lead"><span class="badge bg-secondary">$25.00 USD</span></p>
+	            </div>
+	            <div class="card-body text-center">
+	                
+                  <p  class="btn btn-info btn-sm"><i class="fas fa-utensils fa-fw"></i>&nbsp; &nbsp;detalles del platillo</a> </p>
+                  <p>vggeegntrgultg,vutty,mi..uyntrrtjhjtj<br>gggggehhhhhhrjrjrjhehehesbbhhrh<br>fffghrhrty,hrj</p>
+	                
+              
+	        </div>
+	    </div>
+
+
+
+	</div>
+  </div>
+</div>
+<!-- Footer -->
+	<footer class="footer">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><img class="border-black" src="assets/img/el gran palacioo.jpg" width="250" height="180"></li>
+	                    <li> Descubre nuestra gastronomia, una receta tradicional y la amplia experiencia de nuestros chefs; , uno de los platos más entrañables del Principado; y , de los mejores productores. ¡Ven y conoce nuestra gastronomía! </li>
+	                </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li>
+	                      <h5 class="font-weight-bold">colombia</h5>
+                        </li>
+                      <li><i class="fas fa-map-marker-alt fa-fw"></i>colombia, atlantico,barranquilla Cra. 54 ## 75 - 78 </li><li><h5 class="font-weight-bold" >Horario</h5>
+	                    </li>
+                        <li><i class="fas fa-clock"></i> Lunes Cerrado Martes a Domingo 13:30 a 16:00 - 20:00 a 24:00</li>
+                    </ul>
+	            </div>
+	            <div class="col-12 col-md-4">
+	                <ul class="list-unstyled" >
+	                    <li><h5 class="font-weight-bold" >Siguenos en:</h5> </li>
+	                    <li>
+	                        <a href="https://es-la.facebook.com" class="footer-link" target="_blank" >
+	                            <i class="fab fa-facebook fa-fw"></i> Facebook
+	                        </a>
+	                    </li>
+
+	                    <li>
+	                        <a href="https://www.youtube.com" class="footer-link" target="_blank" >
+	                            <i class="fab fa-youtube fa-fw"></i>
+	                                Youtube
+	                        </a>
+	                    </li>
+	                </ul>
+	            </div>
+	        </div>
+	    </div>
+	</footer>
+	
+	
+	
+</body>
+</html>

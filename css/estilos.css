@@ -1,0 +1,250 @@
+
+
+* {
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    background: #fff;
+    margin-top: 500px;
+    padding: 10px;
+}
+.h1s{
+    text-align: center;
+    color: #1a2537;
+    font-size: 40px;
+}
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+.button2{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background:  #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background: cadetblue;
+}
+p{
+    text-align: center;
+}
+.link2{
+    text-decoration: none;
+      color: #1a2537;
+    font-weight: 600;
+}
+.link:hover{
+     color: cadetblue;
+}
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+.banner2{
+	height: 40%;	
+	position: relative;
+	animation: banner 15s infinite linear;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;}
+
+@keyframes banner2{
+	0%,20% { background-image: url("../assets/img/banner_1.jpg")
+	}
+	25%,45% { background-image: url("../assets/img/banner_2.jpg")
+	}
+	50%,70% { background-image: url("../assets/img/banner_1.jpg")
+	}
+    75%,100% { background-image: url("../assets/img/banner_3.jpg")
+
+}
+}
+.capa{width: 100%;
+      height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0.6);
+}
+.info{
+	position:absolute; top: 90px; left: 150px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	color: #FFF;
+	font-family: 'poppinsregular';
+	text-align:center;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperdiv{
+    width: 600px;
+    height: 250px;
+    margin: 5px;
+    border-top: 5px solid transparent;
+}
+
+
+
+.box-1{
+    background-image: url("../assets/platillos/atun a la plancha.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+
+}
+
+.box-2{
+    background-image: url("../assets/platillos/paella valenciana.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+.box-3{
+    background-image: url( "../assets/platillos/Camarones rancheros.jpg");
+    background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;}
+    
+.box-4{
+    background-image: url("../assets/platillos/Salsa Boloñesa original.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+
+}
+
+.box-5{
+    background-image: url("../assets/platillos/Pescado a la hawaiana.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+.box-6{
+    background-image: url( "../assets/platillos/cerdo en salsa chipotle.jpg");
+    background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;}
+	
+.box-7{
+    background-image: url("../assets/platillos/Sopa de Calabaza y Jengibre con Semillas de Girasol.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-8{
+    background-image: url("../assets/platillos/Tarta de espinacas y mozzarella.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+.box-9{
+    background-image: url( "../assets/platillos/spaghetti a la boloñesa.jpg");
+    background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;}
+
+.box-10{
+    background-image: url("../assets/platillos/salmon a la naranja.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+
+.box-11{
+    background-image: url("../assets/platillos/Ensalada Rusa con Pollo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+  
+.box-12{
+    background-image: url( "../assets/platillos/ensalada de pollo con mayonesa.jpg");
+    background-position: center;
+    background-size: cover;
+	background-repeat: no-repeat;}
+
+.zoom{-webkit-transform: scale(1,1);
+		-webkit-transition-timing-function:ease-out;
+	     -webkit-transition-duration:550ms;
+	-moz-transform: scale(1,1);
+	-moz-transition-timing-function:ease-out;
+	 -moz-transition-duration:950ms;
+	}
+	.zoom:hover{
+		-webkit-transform :scale(1.10,1.10); 
+		-webkit-transition-timing-function:ease-out;
+		-webkit-transition-duration:600ms;
+		-moz-transform : scale(1.10,1.10); 
+		-moz-transition-timing-function:ease-out;
+		 -moz-transition-duration:600ms;
+	}
+	
+
+@media screen and (min-width: 700px)
+    
+    
+    .wrapperdiv{
+        width: 400px;
+        height: 100px;
+		margin: 10px;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
